@@ -192,20 +192,23 @@ class _HomeState extends State<Home> {
                 title: Text(title),
                 content: Text(message1),
                 actions: <Widget>[
+
                   new Container(
-                    margin: EdgeInsets.all(8.0),
-                    child: RaisedButton(
-                      padding: EdgeInsets.all(12.0),
+                    padding: EdgeInsets.all(12.0),
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor:  Colors.blue[900],
+                        padding: EdgeInsets.all(2.0),
+                      ),
                       onPressed: () {
                         Navigator.pop(context);
                       },
-                      color: Colors.blue[900],
                       child: Text(
                         'Okay',
                         style: TextStyle(color: Colors.white, fontSize: 24.0),
                       ),
                     ),
-                  )
+                  ),
                 ],
               )
             : new AlertDialog(
@@ -222,20 +225,24 @@ class _HomeState extends State<Home> {
                           ]);
                         })),
                 actions: <Widget>[
+
                   new Container(
                     margin: EdgeInsets.all(8.0),
-                    child: RaisedButton(
-                      padding: EdgeInsets.all(2.0),
+                    padding: EdgeInsets.all(2.0),
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor:  Colors.blue[900],
+                        padding: EdgeInsets.all(2.0),
+                      ),
                       onPressed: () {
                         Navigator.pop(context);
                       },
-                      color: Colors.blue[900],
                       child: Text(
                         'Okay',
                         style: TextStyle(color: Colors.white, fontSize: 24.0),
                       ),
                     ),
-                  )
+                  ),
                 ],
               );
       },
@@ -584,34 +591,41 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                 ),
-                Container(
+
+                new Container(
                   margin: EdgeInsets.all(8.0),
-                  child: RaisedButton(
-                    padding: EdgeInsets.fromLTRB(2.0, 11.0, 2.0, 11.0),
+                  padding: EdgeInsets.fromLTRB(2.0, 11.0, 2.0, 11.0),
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor:  Colors.blue[900],
+                    ),
                     onPressed: () {
                       _sendDatas();
                     },
-                    color: Colors.blue[900],
                     child: Text(
                       'NEXT',
-                      style: TextStyle(color: Colors.white, fontSize: 20),
+                      style: TextStyle(color: Colors.white, fontSize: 20.0),
                     ),
                   ),
                 ),
-                Container(
+
+                new Container(
                   margin: EdgeInsets.all(8.0),
-                  child: RaisedButton(
-                    padding: EdgeInsets.fromLTRB(2.0, 11.0, 2.0, 11.0),
+                  padding: EdgeInsets.fromLTRB(2.0, 11.0, 2.0, 11.0),
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor:  Colors.blue[900],
+                    ),
                     onPressed: () {
                       Navigator.pop(context);
                     },
-                    color: Colors.blue[900],
                     child: Text(
                       'BACK',
-                      style: TextStyle(color: Colors.white, fontSize: 20),
+                      style: TextStyle(color: Colors.white, fontSize: 20.0),
                     ),
                   ),
-                )
+                ),
+
               ],
             ),
           ),

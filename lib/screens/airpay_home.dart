@@ -244,23 +244,23 @@ class _AirPayState extends State<AirPay> {
                 title: Text(title),
                 content: Text(message1),
                 actions: <Widget>[
+
                   new Container(
                     margin: EdgeInsets.all(8.0),
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.blue[900], 
-                        padding: EdgeInsets.all(12.0),
-                        ),
+                        backgroundColor:  Colors.blue[900],
+                        padding: EdgeInsets.all(2.0),
+                      ),
                       onPressed: () {
                         Navigator.pop(context);
                       },
-                      
                       child: Text(
                         'Okay',
                         style: TextStyle(color: Colors.white, fontSize: 24.0),
                       ),
                     ),
-                  )
+                  ),
                 ],
               )
             : new AlertDialog(
@@ -280,21 +280,19 @@ class _AirPayState extends State<AirPay> {
                   new Container(
                     margin: EdgeInsets.all(8.0),
                     child: ElevatedButton(
-                       style: ElevatedButton.styleFrom(
-                            backgroundColor:  Colors.blue[900],
-                            padding: EdgeInsets.all(2.0),
-                          ),
-                      
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor:  Colors.blue[900],
+                        padding: EdgeInsets.all(2.0),
+                      ),
                       onPressed: () {
                         Navigator.pop(context);
                       },
-                     
                       child: Text(
                         'Okay',
                         style: TextStyle(color: Colors.white, fontSize: 24.0),
                       ),
                     ),
-                  )
+                  ),
                 ],
               );
       },
@@ -313,32 +311,34 @@ class _AirPayState extends State<AirPay> {
                 title: Text(title),
                 content: Text(message1),
                 actions: <Widget>[
+
                   new Container(
                     margin: EdgeInsets.all(0),
+                    padding: EdgeInsets.all(8.0),
                     child: ElevatedButton(
-                       style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.blue[900],
-                          padding: EdgeInsets.all(8.0),
-                          ),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor:  Colors.blue[900],
+                        padding: EdgeInsets.all(2.0),
+                      ),
                       onPressed: () {
                         Navigator.pop(context);
                         userCancel('User canceled');
                       },
-                      
                       child: Text(
                         'Yes',
                         style: TextStyle(color: Colors.white, fontSize: 24.0),
                       ),
                     ),
                   ),
+
                   new Container(
                     margin: EdgeInsets.all(0),
+                    padding: EdgeInsets.all(8.0),
                     child: ElevatedButton(
-                       style: ElevatedButton.styleFrom(
-                            backgroundColor:  Colors.blue[900],
-                            padding: EdgeInsets.all(8.0),
-                          ),
-                      
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor:  Colors.blue[900],
+                        padding: EdgeInsets.all(2.0),
+                      ),
                       onPressed: () {
                         Navigator.pop(context);
                       },
@@ -347,20 +347,23 @@ class _AirPayState extends State<AirPay> {
                         style: TextStyle(color: Colors.white, fontSize: 24.0),
                       ),
                     ),
-                  )
+                  ),
+
                 ],
               )
             : new AlertDialog(
                 title: Text(title),
                 content: Text(message1),
                 actions: <Widget>[
+
                   new Container(
                     margin: EdgeInsets.all(0),
+                    padding: EdgeInsets.all(2.0),
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                            backgroundColor:  Colors.blue[900],
-                            padding: EdgeInsets.all(2.0),
-                          ),
+                        backgroundColor:  Colors.blue[900],
+                        padding: EdgeInsets.all(2.0),
+                      ),
                       onPressed: () {
                         Navigator.pop(context);
                         userCancel('User canceled');
@@ -371,13 +374,15 @@ class _AirPayState extends State<AirPay> {
                       ),
                     ),
                   ),
+
                   new Container(
                     margin: EdgeInsets.all(0),
+                    padding: EdgeInsets.all(2.0),
                     child: ElevatedButton(
-                     style: ElevatedButton.styleFrom(
-                            backgroundColor:  Colors.blue[900],
-                            padding: EdgeInsets.all(2.0),
-                          ),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor:  Colors.blue[900],
+                        padding: EdgeInsets.all(2.0),
+                      ),
                       onPressed: () {
                         Navigator.pop(context);
                       },

@@ -1,11 +1,11 @@
 name: airpay_package
 description: A Airpay Flutter package project for airpay payments integeration.
-version: 1.1.0
+version: 1.1.0+4
 owner: airpay
 homepage: https://www.airpay.co.in/
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: '>=2.12.0 <3.0.0'
   flutter: ">=1.17.0"
 
 dependencies:
@@ -13,13 +13,13 @@ dependencies:
     sdk: flutter
   crypto: ^3.0.1
   intl: ^0.17.0
-  webview_flutter: ^2.0.8
-  flutter_spinkit: ^5.0.0
-  xml2json: ^5.2.0
-  dio: ^4.0.0
+  webview_flutter: ^3.0.1
+  flutter_spinkit: ^5.1.0
+  xml2json: ^5.3.2
+  dio: ^4.0.4
   connectivity: ^3.0.6
   #Example
-  alert_dialog: ^0.1.0
+  alert_dialog: ^1.0.1
 
 dev_dependencies:
   flutter_test:

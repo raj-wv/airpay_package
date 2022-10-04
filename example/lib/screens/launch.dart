@@ -33,20 +33,24 @@ class _SplashScreenState extends State<SplashScreen> {
                 height: 80,
                 width: 200,
               ),
-              Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: RaisedButton(
-                  padding: EdgeInsets.fromLTRB(5.0, 16.0, 5.0, 16.0),
+
+              new Container(
+                margin: const EdgeInsets.all(16.0),
+                padding: EdgeInsets.fromLTRB(5.0, 16.0, 5.0, 16.0),
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor:  Colors.blue[900],
+                  ),
                   onPressed: () {
                     Navigator.pushNamed(context, '/Choice');
                   },
-                  color: Colors.blue[900],
                   child: Text(
                     'GET STARTED',
                     style: TextStyle(color: Colors.white, fontSize: 24.0),
                   ),
                 ),
               ),
+
             ],
           ),
         ),
@@ -92,10 +96,14 @@ class _ChoiceScreenState extends State<ChoiceScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: RaisedButton(
-                      padding: EdgeInsets.fromLTRB(2.0, 11.0, 2.0, 11.0),
+
+                  new Container(
+                    margin: const EdgeInsets.all(8.0),
+                    padding: EdgeInsets.fromLTRB(2.0, 11.0, 2.0, 11.0),
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor:  Colors.blue[900],
+                      ),
                       onPressed: () {
                         Navigator.push(
                           context,
@@ -103,18 +111,21 @@ class _ChoiceScreenState extends State<ChoiceScreen> {
                             builder: (context) => Home(isSandbox: true),
                           ),
                         );
-                      },
-                      color: Colors.blue[900],
+                        },
                       child: Text(
                         'SANDBOX',
-                        style: TextStyle(color: Colors.white, fontSize: 20),
+                        style: TextStyle(color: Colors.white, fontSize: 20.0),
                       ),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: RaisedButton(
-                      padding: EdgeInsets.fromLTRB(2.0, 11.0, 2.0, 11.0),
+
+                  new Container(
+                    margin: const EdgeInsets.all(8.0),
+                    padding: EdgeInsets.fromLTRB(2.0, 11.0, 2.0, 11.0),
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor:  Colors.blue[900],
+                      ),
                       onPressed: () {
                         Navigator.push(
                           context,
@@ -123,13 +134,13 @@ class _ChoiceScreenState extends State<ChoiceScreen> {
                           ),
                         );
                       },
-                      color: Colors.blue[900],
                       child: Text(
                         'PRODUCTION',
-                        style: TextStyle(color: Colors.white, fontSize: 20),
+                        style: TextStyle(color: Colors.white, fontSize: 20.0),
                       ),
                     ),
                   ),
+
                   SizedBox(
                     height: 40.0,
                   ),
